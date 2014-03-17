@@ -1,0 +1,179 @@
+@import "base";
+
+html, body {
+    height: 100%;
+}
+
+// top-wrap
+.top-wrap{
+	overflow: hidden;
+}
+
+.out{
+	overflow: hidden;
+}
+
+.top{
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 20px 0;
+	max-width: 1120px;
+	
+	@include respond-to(mobile){
+		max-width: 300px;
+		padding: 20px 10px;
+
+		.top__middle {
+			display: none;
+		}
+
+		.top__right {
+			display: none;
+		}
+
+
+	}
+
+	@include respond-to(tablet){
+		max-width: 740px;
+		padding: 20px 15px;
+
+		.top__middle {
+			display: block;
+		}
+
+		.top__right {
+			display: block;
+		}
+	}
+
+	@include respond-to(mobile-landscape){
+		max-width: 440px;
+		padding: 20px 10px;
+
+		.top__middle {
+			display: block;
+		}
+
+		.top__right {
+			display: block;
+		}
+	}
+
+	.m-menu{
+		float: right;
+	}
+
+	.logo{
+		float: left;
+		width: 161px;
+		margin: 0 -161px 0 0;
+	}
+}
+
+.top__middle{
+	width:100%;
+	padding: 30px 0;
+	float: left;
+
+	.i-nav{
+
+	}
+}
+
+.top__right{
+	float: left;
+	width: 265px;
+	margin: 0 0 0 -265px;
+}
+
+// logo
+.logo{
+	display: block;
+	position: relative;
+	z-index: 10;
+
+	img{
+		display: block;
+	}
+
+	@include respond-to(mobile){
+		width: 108px;
+	}
+
+	@include respond-to(tablet){
+		width: 136px;
+	}
+}
+
+// m-nav-wrap
+.m-nav-wrap{
+	margin: 0 0 15px;
+}
+
+.m-nav{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.m-nav__item{
+	display: inline-block;
+	zoom:1;
+    *display:inline;
+    position: relative;
+
+}
+
+// content-wrap
+.content-wrap{
+	position: relative;
+}
+
+.content{
+	max-width: 1120px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@include respond-to(mobile){
+		max-width: 300px;
+		padding: 0 10px;
+	}
+
+	@include respond-to(mobile-landscape){
+		max-width: 460px;
+		padding: 0 10px;
+	}
+
+	@include respond-to(tablet){
+		max-width: 730px;
+
+	}	
+}
+
+// footer-wrap
+.footer-wrap{
+	padding: 35px 0 40px;
+    background: #dde0e2;
+}
+
+.footer{
+	max-width: 1120px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@include respond-to(mobile){
+		max-width: 300px;
+		padding: 0 10px;
+	}
+
+	@include respond-to(mobile-landscape){
+		max-width: 460px;
+		padding: 0 10px;
+	}
+
+	@include respond-to(tablet){
+		max-width: 730px;
+	}
+
+
+}

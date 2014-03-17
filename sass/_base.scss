@@ -1,0 +1,19 @@
+// this one just agregates all the libs
+@import "compass/css3";
+@import "lib/mixins";
+@import "lib/animations";
+@import "lib/keyframes";
+@import "compass/css3/transition";
+
+// gradients for ie
+$experimental-support-for-svg: true;
+
+// global sprites
+$icons: sprite-map("icons/*.png", $spacing: 5px, $layout:smart);
+$icons-retina: sprite-map("icons-retina/*.png", $spacing: 5px, $layout:smart);
+
+$default-transition-property : all;
+$default-transition-duration : 1s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+
