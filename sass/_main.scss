@@ -14,13 +14,18 @@
     }
 
     @include respond-to(mobile){
-        float: left;
-        margin: 70px 0 0;       
+        margin: 0 auto; 
+        .i-nav__item{
+            display: block;
+        }    
     }
 
     @include respond-to(mobile-landscape){
         float: left;
         margin: 70px 0 0;
+        .i-nav__item{
+            display: inline-block;
+        }    
     }
 
 }
@@ -33,6 +38,8 @@
     margin: 0 14px;
     font-size: 18px;
     line-height: 22px;
+    color: #271D5E;
+    text-transform: uppercase;
     font-family: 'pf_din_text_comp_proregular', serif;
 
     &:hover{
@@ -140,6 +147,29 @@
 
 }
 
+// search_mob
+.search_mob{
+    width: 100%;
+    display: none;
+    clear: both;
+    padding: 20px 0 0;
+    .input{
+        position: relative;
+        border: 2px solid  #79cfd2;
+
+        input{
+            position: relative;
+            font-size: 13px;
+            line-height: 15px;
+
+        }
+
+        .btn{
+            position: absolute;
+        }
+    }
+}
+
 // login
 .login{
 
@@ -166,7 +196,18 @@
 
 // lang
 .lang{
-
+    color: #79CFD2;
+    font-size: 12px;
+    line-height: 16px;
+    b{
+        color: #271D5E;
+    }
+    a{
+        color: #79CFD2;
+    }
+    .lang__separator{
+        padding: 0 8px;
+    }   
 }
 
 .lang__item{
@@ -200,7 +241,7 @@
 }
 
 .m-nav__item{
-
+    list-style: none;
     &.active{
 
         .m-nav__item__link{
@@ -208,7 +249,7 @@
         }
 
         .icon_arrow-top-w{
-            display: block;
+            display: block ;
         }
     }
 
@@ -220,7 +261,7 @@
         }
 
         &.active{
-            display: block;
+            display: block !important;
         }
 
         .m-nav__item__link{
@@ -684,6 +725,7 @@
     padding: 0 0 20px;
 
     &+.f-box__row__col{
+        margin-top: -50px;
         float: right;
     }
 
@@ -693,6 +735,9 @@
 
         &.f-box__row__col{
             float: none;
+            &+.f-box__row__col{
+                margin-top: 0;
+            }
         }
     }
 
@@ -706,6 +751,7 @@
     }
 
 }
+
 
 // hot
 .hot{

@@ -40,8 +40,8 @@ jQuery(function($){
                     type: 'outside'
                 },
                 thumbs  : {
-                    width   : 50,
-                    height  : 50
+                    width : 50,
+                    height : 50
                 }
             }
         });
@@ -153,6 +153,22 @@ jQuery(function($){
 
     }
 
+    $(".js-m-nav").on("click",function(event){
+            event.stopPropagation();
+    });
+ 
+    $('.js-btn_sq').click(function() {
+        $(".js-m-nav").slideToggle();
+        return false;
+    });
 
+    $('.js-btn_search').click(function() {
+        $(".js-input").slideToggle();
+        return false;
+    });
 
+    $('.js-btn_i-nav').click(function() {
+            $(".js-i-nav").slideToggle();
+            return false;
+        });
 });

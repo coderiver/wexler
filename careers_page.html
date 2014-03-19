@@ -19,23 +19,23 @@
 
             <div class="top clearfix">
                 <div class="m-menu clearfix">
-                    <div class="m-menu__item">
+                    <!-- <div class="m-menu__item">
                         <a href="#" class="btn btn_sq">
                             <i class="icon icon_user">&nbsp;</i>
                         </a>
                     </div><!-- m-menu__item end -->
                     <div class="m-menu__item">
-                        <a href="#" class="btn btn_sq">
+                        <a href="#" class="btn btn_sq js-btn_sq">
                             <i class="icon icon_menu">&nbsp;</i>
                         </a>
                     </div><!-- m-menu__item end -->
                     <div class="m-menu__item">
-                        <a href="#" class="btn btn_sq">
+                        <a href="#" class="btn btn_sq js-btn_search">
                             <i class="icon icon_search">&nbsp;</i>
                         </a>
                     </div><!-- m-menu__item end -->
                     <div class="m-menu__item">
-                        <a href="#" class="btn btn_sq">
+                        <a href="#" class="btn btn_sq js-btn_i-nav">
                             <i class="icon icon_lang">&nbsp;</i>
                         </a>
                     </div><!-- m-menu__item end -->
@@ -44,17 +44,17 @@
                     
                     <span data-picture data-alt="">
                         <span data-src="img/logo-s.png"></span>
-                        <span data-src="img/logo-m.png"     data-media="(min-width: 480px)"></span>
-                        <span data-src="img/logo-l.png"      data-media="(min-width: 768px)"></span>
+                        <span data-src="img/logo-m.png" data-media="(min-width: 480px)"></span>
+                        <span data-src="img/logo-l.png" data-media="(min-width: 768px)"></span>
                         <span data-src="img/logo.png" data-media="(min-width: 1024px)"></span>
 
                         <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
                         <noscript>
-                            <img src="img/logo-s.png" alt="">
+                            <img src="img/logo-s.png" alt="" />
                         </noscript>
                     </span>
                 </a>
-                <div class="top__middle clearfix">
+                <div class="top__middle clearfix js-i-nav">
 
                     <div class="i-nav">
                         <a href="#" class="i-nav__item">
@@ -64,7 +64,7 @@
                             ПОДДЕРЖКА 
                         </a>
                         <a href="#" class="i-nav__item">
-                            ГДЕ КУПИТЬ?
+                            Новости
                         </a>
                     </div><!-- i-nav end -->
 
@@ -72,13 +72,10 @@
                 
                 <div class="top__right clearfix">
 
-                    <div class="login">
-                        <a href="#" class="login__item">Войти</a>
-                        <a href="#" class="login__item">Зарегистрироваться</a>
-                    </div><!-- login end -->
+                   
 
                     <div class="lang">
-                        <a href="#" class="lang__item"><img src="img/flag-ru.png" alt="" />RU</a>
+                        <b>RU</b><span class="lang__separator">|</span><a href="#">EN</a>
                     </div><!-- lang end -->
 
                     <div class="search">
@@ -92,26 +89,34 @@
 
                 </div><!-- top__right end -->
 
+                <div class="search search_mob js-input">
+                    <div class="input">
+                        <input type="text" title="Поиск"/>
+                        <a href="#" class="bnt btn_search">
+                            <i class="icon icon_search">&nbsp;</i>
+                        </a>
+                    </div>
+                </div><!-- search end -->
             
             </div><!-- top end -->
                 
             <div class="m-nav-wrap">
                 
                 <ul class="m-nav clearfix">
-                    <li class="m-nav__item "><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>О Компании</a></li>
-                    <li class="m-nav__item active"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>РЕКЛАМНЫЕ МАТЕРИЛЫ</a></li>
-                    <li class="m-nav__item"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>партнеры</a></li>
-                    <li class="m-nav__item"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>АКЦИОНРЕЫ</a></li>
-                    <li class="m-nav__item"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>Инвесторы </a></li>
-                    <li class="m-nav__item"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>социальная отвественность</a></li>
-                    <li class="m-nav__item"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>Вакансии</a></li>
-                    <li class="m-nav__item"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>Контакты</a></li>
+                    <li class="m-nav__item active"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>О Компании</a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>РЕКЛАМНЫЕ МАТЕРИЛЫ</a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>партнеры</a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>АКЦИОНРЕЫ</a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>Инвесторы </a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>социальная отвественность</a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>Вакансии</a></li>
+                    <li class="m-nav__item js-m-nav"><a href="#" class="m-nav__item__link"><i class="icon icon_arrow-top-w">&nbsp;</i>Контакты</a></li>
                 </ul>
-
+            
             </div><!-- m-nav end -->
-
+        
         </div><!-- top-wrap end -->
-
+        
         <div class="content-wrap">
 
             <div class="content">
