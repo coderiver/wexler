@@ -515,11 +515,35 @@ html, body { height: 100%; }
 .desr .post h2 { padding: 0 0 10px; margin: 0; }
 .desr .post p { padding: 0 0 10px; }
 
+.products { width: 33%; vertical-align: top; display: inline-block; }
+.products:hover h2 { text-decoration: underline; }
+@media only screen and (max-width: 767px) { .products { width: 100%; margin-bottom: 30px; }
+  .products:last-child { margin: 0; } }
+
+.cols_mod { margin: 10px 0 40px; font-size: 0; }
+
+.cols__w160 { float: left; width: 40%; display: inline-block; }
+.cols__w160 .img img { width: 100%; }
+@media only screen and (min-width: 480px) and (max-width: 767px) { .cols__w160 { width: 31.5%; } }
+@media only screen and (max-width: 767px) { .cols__w160 { width: 48.18%; } }
+
 .cols__w200 { float: left; padding: 0 20px 0 0; }
 @media only screen and (max-width: 767px) { .cols__w200 { float: none; }
   .cols__w200 .img { text-align: center; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) { .cols__w200 { float: left; } }
 .cols__w200 .img { padding: 0 0 15px; }
+
+.cols__w200_mod { float: right; width: 60%; display: inline-block; }
+.cols__w200_mod .post { padding: 6px 15px 0; display: inline-block; }
+.cols__w200_mod .post h2 { margin: 0; font-size: 22.67px; font-weight: normal; text-transform: uppercase; font-family: 'pf_din_text_comp_proregular', Tahoma, sans-serif; display: inline-block; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .cols__w200_mod .post { padding: 0 6px; }
+  .cols__w200_mod .post h2 { line-height: 20px; font-size: 17.34px; } }
+@media only screen and (min-width: 480px) and (max-width: 767px) { .cols__w200_mod { width: 68.5%; }
+  .cols__w200_mod .post { padding: 6 15px; }
+  .cols__w200_mod .post h2 { font-size: 21.34px; } }
+@media only screen and (max-width: 767px) { .cols__w200_mod { width: 51.8%; }
+  .cols__w200_mod .post { padding: 0 0 0 15px; }
+  .cols__w200_mod .post h2 { font-size: 18px; } }
 
 .cols_fixed .cols__w30p { float: left; max-width: 300px; width: 30%; }
 .cols_fixed .cols__w70p { float: left; max-width: 860px; width: 70%; padding: 0; }

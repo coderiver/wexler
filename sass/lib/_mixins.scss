@@ -25,6 +25,9 @@ $break-desktop-wide: 1160px;
 	@else if $media == mobile-landscape{
 		@media only screen and (min-width: $break-small-middle) and (max-width: $break-small) { @content; }
 	}
+	@else if $media == mobile-landscape-small{
+		@media only screen and (min-width: $break-small-middle) { @content; }
+	}
 
 }
 // retina bg
