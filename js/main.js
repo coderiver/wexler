@@ -168,7 +168,28 @@ jQuery(function($){
     });
 
     $('.js-btn_i-nav').click(function() {
-            $(".js-i-nav").slideToggle();
-            return false;
+        $(".js-i-nav").slideToggle();
+        return false;
+    });
+
+
+});
+$(document).ready(function() {
+    ymaps.ready(init);
+    var myMap, 
+        myPlacemark;
+
+    function init(){
+        myMap = new ymaps.Map ("map", {
+            center: [55.7622200, 37.5955600],
+            zoom: 13
+        }); 
+        
+        myPlacemark = new ymaps.Placemark([55.7522200, 37.6155600], {
+            hintContent: 'Ульянково!',
+            balloonContent: 'Ульянково'
         });
+        
+        myMap.geoObjects.add(myPlacemark);
+    }
 });

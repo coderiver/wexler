@@ -710,6 +710,19 @@
     }
 
 }
+// b-input_mod
+.b-input_mod{
+    margin-bottom: 30px;
+    @include respond-to(mobile){
+        margin: 0 16px 30px 0;
+        display: inline-block;
+    }
+    @include respond-to(tablet){
+        margin: 0 30px 30px 0;
+        display: inline-block;
+    }
+    
+}
 
 // f-box
 .f-box{
@@ -974,7 +987,12 @@
         padding: 0 0 15px;
     }
 }
-
+.cols__w200_pad{
+    padding: 0px;
+    @include respond-to(mobile){
+        margin-right: -20px;
+    }
+}
 .cols__w200_mod{
     float: right;
     width: 60%;
@@ -1023,6 +1041,50 @@
 
 .cols__w920{
 
+}
+
+.cols__w860{
+    float: right;
+    width: 74%;
+    .post_mod{
+        display: none;
+    }
+    @include respond-to(tablet){
+        width: 100%;
+        .post{
+            display: none;
+        }
+        .post_mod{
+            display: block;
+            h2{
+                margin: 30px 0 0 0;
+            }
+        }
+        .address{
+            padding-bottom: 60px;
+            .address__coll{
+            padding: 20px 80px 0 0;
+            } 
+        }  
+    }
+    @include respond-to(mobile){
+        width: 100%;
+        .post{
+            display: none;
+        }
+        .post_mod{
+            display: block;
+            h2{
+                margin: 30px 0 0 0;
+            }
+        }
+        .address{
+            padding-bottom: 60px;
+            .address__coll{
+            padding: 20px 80px 0 0;
+            } 
+        }  
+    }
 }
 
 .cols_fixed{
@@ -2385,5 +2447,58 @@
 
     &:first-child{
         margin: 0;
+    }
+}
+
+// map
+.map{
+    overflow: hidden;
+    #map{
+        height: 300px;
+        width: 100%;
+        .ymaps-image-with-content{
+            width: 0 !important;
+            &:before{
+                position: absolute;
+                content: '';
+                top: -139px;
+                left: -23px;
+                z-index: 100;
+                width: 101px;
+                height: 147px;
+                cursor: pointer;
+                background: url(../img/icons/marker-map.png) 0 0 no-repeat
+            }
+        }
+    }
+}
+
+// address
+.address{
+    padding-bottom: 90px;
+    .address__coll{
+        padding: 38px 115px 0 0;
+        display: inline-block;
+        h4{
+            padding-bottom: 10px;
+            font-size: 17.34px;
+            font-weight: normal;
+            line-height: 1;
+            color: #3FA7AB;
+        }
+        p{
+            font-size: 12px;
+            line-height: 1.2;
+            color: #271D5E;
+        }
+        a{
+            color: #271D5E;
+            font-size: 12px;
+            line-height: 1.8;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 }
