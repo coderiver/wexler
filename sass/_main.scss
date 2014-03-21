@@ -2211,6 +2211,34 @@
             }
         }
     }
+    &.is-table{
+        .cols__item{
+            float: none;
+            width: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .line{
+            border-bottom: 1px solid #7CCFD1;
+            padding: 10px 0;
+            overflow: hidden;
+            
+            h3{
+                float: left;
+                width: 30%;
+                @include respond-to(mobile){
+                    float: none;
+                    width: auto;
+                }
+            }
+            ul,div{
+                overflow: hidden;
+                margin-bottom: 0;
+                padding-top: 4px;
+                padding-bottom: 0;
+            }
+        }
+    }
 
     .title{
         padding: 0 0 25px;

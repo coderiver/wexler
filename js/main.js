@@ -171,10 +171,24 @@ jQuery(function($){
         $(".js-i-nav").slideToggle();
         return false;
     });
+    $('.js-listview').click(function(event) {
+        $('.desr__middle__item').removeClass('active');
+        $(this).parent().addClass('active');
+        $(".desr__main").removeClass('is-table');
+        return false;
+    });
+
+    $('.js-tableview').click(function(event) {
+        $('.desr__middle__item').removeClass('active');
+        $(this).parent().addClass('active');
+        $(".desr__main").addClass('is-table');
+        return false;
+    });
 
 
 });
 $(document).ready(function() {
+
     ymaps.ready(init);
     var myMap, 
         myPlacemark;

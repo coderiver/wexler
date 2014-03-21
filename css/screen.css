@@ -778,6 +778,11 @@ html, body { height: 100%; }
 .desr__main .cols .cols__item .post h3 { color: #271d5e; font-size: 24px; line-height: 26px; font-weight: normal; font-family: 'pf_din_text_comp_proregular'; padding: 0 0 15px; }
 .desr__main .cols .cols__item .post ul li { background: url(../img/icons/bullet-sq.png) 0px 8px no-repeat transparent; padding: 0 0 0 13px; }
 .desr__main .cols .cols__item:first-child { padding: 0; }
+.desr__main.is-table .cols__item { float: none; width: auto; margin: 0; padding: 0; }
+.desr__main.is-table .line { border-bottom: 1px solid #7CCFD1; padding: 10px 0; overflow: hidden; }
+.desr__main.is-table .line h3 { float: left; width: 30%; }
+@media only screen and (max-width: 767px) { .desr__main.is-table .line h3 { float: none; width: auto; } }
+.desr__main.is-table .line ul, .desr__main.is-table .line div { overflow: hidden; margin-bottom: 0; padding-top: 4px; padding-bottom: 0; }
 .desr__main .title { padding: 0 0 25px; }
 .desr__main .title h3 { color: #271d5e; font-size: 32px; line-height: 34px; font-weight: normal; font-family: 'pf_din_text_comp_prothin'; }
 
