@@ -105,3 +105,12 @@ $break-desktop-wide: 1160px;
 	width: round(image-width(sprite-file($map, $sprite)) /2 );
 	@include background-size(ceil(image-width(sprite-path($map)) / 2),ceil(image-height(sprite-path($map)) / 2));
 }
+@mixin clr {
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	*zoom: 1;
+}
+	
