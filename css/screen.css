@@ -981,3 +981,40 @@ html, body { height: 100%; }
 .gall { padding: 50px 0 40px; text-align: center; line-height: 1.2; }
 .gall img { margin: 0 auto; display: block; }
 .gall h2 { padding-top: 18px; text-transform: uppercase; font-weight: normal; font-size: 16px; color: #79CFD2; }
+
+.img-l { display: none !important; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .img-xl { display: none !important; }
+  .img-l { display: block !important; }
+  .desr_mod .cols__left { border: none; padding-right: 0; }
+  .desr_mod .cols__right, .desr_mod .cols__left { padding-top: 35px; }
+  .desr_mod .cols__right .post, .desr_mod .cols__left .post { padding-top: 0; }
+  .desr_mod .cols__right .post p, .desr_mod .cols__left .post p { line-height: 20px; font-size: 14.67px; }
+  .desr_mod .cols__right .post h2, .desr_mod .cols__left .post h2 { padding-bottom: 15px; font-size: 26px; }
+  .desr_mod .cols_top .cols__left { padding-right: 0; }
+  .desr_mod .cols_top .cols__right .post { padding-left: 150px !important; }
+  .desr_mod .cols { margin-top: 20px; padding-bottom: 0; }
+  .desr_mod .cols_rel { margin-bottom: 0; padding-bottom: 150px; }
+  .desr_mod .cols_rel .img { float: none !important; left: 0; bottom: 50px; }
+  .desr_mod .cols_bor h2 { margin-top: 45px; }
+  .prod-field .img { width: 780px; }
+  .player { height: auto; }
+  .support-field .desr_mod { width: 780px; }
+  .support-field .cols__right .post { padding-left: 15px !important; } }
+@media only screen and (max-width: 767px) { .desr_mod .cols__right, .desr_mod .cols__left { float: none !important; width: 100% !important; }
+  .desr_mod .cols img { margin: 0 auto; width: 80%; }
+  .desr_mod .cols .post { padding: 0 !important; }
+  .desr_mod .cols__left { border: none; }
+  .desr_mod .cols_rel { margin-bottom: 0; }
+  .desr_mod .cols_rel .cols__right { position: relative; float: none; }
+  .desr_mod .cols_rel .img { position: relative; bottom: auto; left: auto; margin: 0 auto; width: 70%; }
+  .prod-field .img { width: 100%; }
+  .prod-field .img img { width: 100%; }
+  .player { width: 100%; height: auto; }
+  .player img { width: 100%; }
+  .support-field .desr_mod { width: 100%; }
+  .support-field .desr_mod .cols__left { width: 70% !important; margin: 0 auto; }
+  .support-field .desr_mod .cols__right { width: 82% !important; margin: 0 auto; } }
+@media only screen and (max-width: 480px) { .main_mod .products { width: 100%; }
+  .gall img { width: 100%; }
+  .gall:last-child { width: auto; } }
