@@ -1002,6 +1002,7 @@ html, body { height: 100%; }
   .support-field .desr_mod { width: 780px; }
   .support-field .cols__right .post { padding-left: 15px !important; } }
 @media only screen and (max-width: 767px) { .desr_mod .cols__right, .desr_mod .cols__left { float: none !important; width: 100% !important; }
+  .desr_mod .cols { margin-top: 0; }
   .desr_mod .cols img { margin: 0 auto; width: 80%; }
   .desr_mod .cols .post { padding: 0 !important; }
   .desr_mod .cols__left { border: none; }
@@ -1014,7 +1015,16 @@ html, body { height: 100%; }
   .player img { width: 100%; }
   .support-field .desr_mod { width: 100%; }
   .support-field .desr_mod .cols__left { width: 70% !important; margin: 0 auto; }
-  .support-field .desr_mod .cols__right { width: 82% !important; margin: 0 auto; } }
+  .support-field .desr_mod .cols__right { width: 82% !important; margin: 0 auto; }
+  .cols_bot .products { width: 32%; } }
 @media only screen and (max-width: 480px) { .main_mod .products { width: 100%; }
   .gall img { width: 100%; }
-  .gall:last-child { width: auto; } }
+  .gall:last-child { width: auto; }
+  .desr_mod .cols_top { margin-top: 0; }
+  .desr_mod .cols__left { margin-bottom: 0; padding-top: 0; }
+  .desr_mod .post h2 { font-size: 26px; }
+  .desr_mod .post p { padding-bottom: 40px; }
+  .products { margin-bottom: 0; } }
+.fancybox-next { right: -66px !important; }
+
+.fancybox-prev { left: -66px !important; }

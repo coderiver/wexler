@@ -3150,6 +3150,7 @@
             width: 100% !important;
         }
         .cols{
+            margin-top: 0;
             img{
                 margin: 0 auto;
                 width: 80%;
@@ -3204,6 +3205,11 @@
             }
         }
     }
+    .cols_bot{
+        .products{
+            width: 32%;
+        }
+    }
 }
 @include respond-to(mobile-landscape-small){
     .main_mod{
@@ -3219,5 +3225,33 @@
             width: auto;
         }
     }
-    
+    .desr_mod{
+        .cols_top{
+            margin-top: 0;
+        }
+        .cols__left{
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+        .post{
+            h2{
+                font-size: 26px;
+            }
+            p{
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .products{
+        margin-bottom: 0;
+    }
+}
+
+//fancybox
+
+.fancybox-next{
+    right: -66px !important;
+}
+.fancybox-prev{
+    left: -66px !important;
 }

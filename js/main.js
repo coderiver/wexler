@@ -207,3 +207,4 @@ $(document).ready(function() {
         myMap.geoObjects.add(myPlacemark);
     }
 });
+$('.fancybox').fancybox();
